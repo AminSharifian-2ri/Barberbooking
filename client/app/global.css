@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+
+@theme
+{
+--color-primary:#FFD26D;
+--color-grey:#4A4A4A;
+--color-semantic:#F43E3E;
+--color-dark:#16161E;
+--color-light:#E1F8DC;
+--color-success:#5cb85c;
+
+}
+
+
+@keyframes slide-up {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes grow-height {
+    from {
+      height: 20vh;    }
+    to {
+      height: 73vh;
+    }
+  }
+  
+  .slide-up {
+    animation: slide-up 1s ease-out forwards;
+  }
+  
+  .grow-height {
+    animation: grow-height 1s ease-out forwards;
+  }
+
+
+
+/* StatCards */
+.bg-cancelled{
+  background: linear-gradient(#16161E,rgba(65, 9, 9, 0.504));
+border-radius: 16px;
+box-shadow: 0 1px 30px rgba(56, 15, 15, 0.036);
+backdrop-filter: blur(11.4px);
+-webkit-backdrop-filter: blur(11.4px);
+border: 1px solid rgba(105, 63, 63, 0.28);
+}
+
+.bg-pending{
+  background: linear-gradient(rgba(20, 37, 93, 0.21),#16161E);
+border-radius: 16px;
+box-shadow: 0 1px 30px rgba(11, 19, 50, 0.1);
+backdrop-filter: blur(11.4px);
+-webkit-backdrop-filter: blur(11.4px);
+border: 1px solid rgba(29, 74, 234, 0.36);
+}
+
+.bg-appointments{
+  background: linear-gradient(#16161E,rgba(39, 42, 10, 0.34));
+border-radius: 16px;
+box-shadow: 0 1px 30px rgba(53, 50, 14, 0.1);
+backdrop-filter: blur(11.4px);
+-webkit-backdrop-filter: blur(11.4px);
+border: 1px solid rgba(103, 110, 55, 0.57);
+}
+
+
+
